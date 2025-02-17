@@ -1,2 +1,5 @@
-# mobile-ii-ryso
-Repositório para as aulas de Mobile II com o professor João Siles
+# mobile-ii-RySo
+
+## Sobre:
+- Repositório para as aulas de Mobile II com o professor João Siles
+- Aulas em dupla: ([Ryan Reis] (https://github.com/Ry2903)) e ([Sofia Ansanelo](https://github.com/SofiAnsanelo))
