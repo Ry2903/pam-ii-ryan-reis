@@ -10,8 +10,15 @@ export default function HomeScreen() {
       <View style={styles.logo}>
         <Text style={styles.logotext}>NSA</Text>
       </View>
+
+      <View style={styles.box}>
+        <Text style={styles.persona}>{`RM: 0000000 \nSemestre: 5 \nMódulo/Série atual: 3 série \nTurma: B`}</Text>
+      </View>
+
   
+      <View style={styles.desc}>
       <Text style={styles.info}>Ensino Médio com Desenvolvimento de Sistemas</Text>
+      </View>
       
 
       <View style={styles.buttonContainer}>
@@ -57,10 +64,27 @@ const styles = StyleSheet.create({
     fontSize: 50,
     fontFamily: 'Lobster',
   },
+  persona: {
+    color: '#fff',
+    fontSize: 20
+  },
+  box: {
+    backgroundColor: '#a9a3a8',
+    padding: 10,
+    margin: 20,
+    borderWidth: 2,           // Define a espessura do contorno
+    borderColor: '#808080',   // Define a cor do contorno 
+    borderRadius: 10,    
+  },
+  desc: {
+    backgroundColor: '#a9a3a8',
+    padding: 5,
+    margin: 5,
+  },
   info: {
-    fontSize: 16,
-    marginBottom: 20,
-    color: '#555',
+    color: '#fff',
+    fontSize: 18,
+    justifyContent: 'center',
 
   },
   buttonContainer: {
