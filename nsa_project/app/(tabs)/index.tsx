@@ -65,26 +65,31 @@ const styles = StyleSheet.create({
     fontFamily: 'Lobster',
   },
   persona: {
-    color: '#fff',
-    fontSize: 20
+    color: '#00000',
+    fontSize: 20,
+    fontFamily: 'Times New Roman'
   },
   box: {
-    backgroundColor: '#a9a3a8',
+    backgroundColor: '#fff',
     padding: 10,
     margin: 20,
     borderWidth: 2,           // Define a espessura do contorno
-    borderColor: '#808080',   // Define a cor do contorno 
+    borderColor: '#C0C0C0',   // Define a cor do contorno 
     borderRadius: 10,    
   },
   desc: {
-    backgroundColor: '#a9a3a8',
+    backgroundColor: '#fff',
     padding: 5,
     margin: 5,
+    borderWidth: 2,
+    borderColor: '#C0C0C0',
+    borderRadius: 10,
   },
   info: {
-    color: '#fff',
+    color: '#00000',
     fontSize: 18,
     justifyContent: 'center',
+    fontFamily: 'Times New Roman'
 
   },
   buttonContainer: {
