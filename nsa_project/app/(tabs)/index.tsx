@@ -1,40 +1,83 @@
-import { View, Text, Image, StyleSheet, Button, Platform } from 'react-native';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import React from 'react';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function HomeScreen() {
+  const navigation = useNavigation();
+
   return (
-    <View style={styles.container}> {/* Criando um container */}
-      <Text style={styles.title}>Habilitação selecionada</Text>
+    <View style={styles.container}>
+      <View style={styles.logo}>
+        <Text style={styles.logotext}>NSA</Text>
+      </View>
+  
       <Text style={styles.info}>Ensino Médio com Desenvolvimento de Sistemas</Text>
-        title="Ir para a tela de Detalhes"
-        onPress={() => navigation.navigate('Details')}
-      />
+      
+
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Frequencia')}>
+          <Text style={styles.buttonText}>Frequência</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Declaracoes')}>
+          <Text style={styles.buttonText}>Declarações</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Boletim')}>
+          <Text style={styles.buttonText}>Boletim</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Mensagens')}>
+          <Text style={styles.buttonText}>Mensagens</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  Container: {
-    flexDirection: 'row',
+  container: {
+    justifyContent: 'center',
     alignItems: 'center',
-    gap: 8,
+    backgroundColor: '#f5f5f5',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  logo: {
+    backgroundColor: '#61a5c2',
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  logotext: {
+    color: '#fff',
+    fontSize: 50,
+    fontFamily: 'Lobster',
   },
   info: {
-    height: 8,
-    backgroundColor: #ffffff,
+    fontSize: 16,
+    marginBottom: 20,
+    color: '#555',
 
-  }
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  buttonContainer: {
+    width: '100%',
+    alignItems: 'center',
+  },
+  button: {
+    backgroundColor: '#007bff',
+    padding: 15,
+    width: '80%',
+    alignItems: 'center',
+    borderRadius: 8,
+    marginVertical: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 });
