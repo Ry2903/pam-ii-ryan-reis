@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     },
     inst: {
         color: '#000000',
-        fontSize: 18,
+        fontSize: 14,
         fontWeight: 'bold',
       },
     footer: {
@@ -49,8 +49,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#16425B',
         padding: 10,
         alignItems: 'center',
-      },
-      rodape: {
+    },
+    rodape: {
         color: '#fff',
         fontSize: 14,
       }

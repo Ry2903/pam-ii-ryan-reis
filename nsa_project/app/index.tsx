@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function HomeScreen() {
@@ -7,38 +7,40 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.logo}>
-        <Text style={styles.logotext}>NSA</Text>
-      </View>
+      <ScrollView contentContainerStyle={styles.scrollContainer}>
+        <View style={styles.logo}>
+          <Text style={styles.logotext}>NSA</Text>
+        </View>
 
-      <Text style={styles.inst}>DADOS DA CLASSE SELECIONADA</Text>
-      <View style={styles.box}>
-        <Text style={styles.info}>{'RM: 2501000 \nSemestre/Ano: 2025 \nMódulo/Série atual: 3 Série \nTurma: A\nGrupo do Componente: B'}</Text>
-      </View>
+        <Text style={styles.inst}>DADOS DA CLASSE SELECIONADA</Text>
+        <View style={styles.box}>
+          <Text style={styles.info}>{'RM: 2501000 \nSemestre/Ano: 2025 \nMódulo/Série atual: 3 Série \nTurma: A\nGrupo do Componente: B'}</Text>
+        </View>
 
-      <Text style={styles.inst}>DADOS DA HABILITAÇÃO SELECIONADA</Text>
-      <View style={styles.box}>
-        <Text style={styles.info}>Ensino Médio com Hab. em Desenvolvimento de Sistemas</Text>
-      </View>
+        <Text style={styles.inst}>DADOS DA HABILITAÇÃO SELECIONADA</Text>
+        <View style={styles.box}>
+          <Text style={styles.info}>Ensino Médio com Hab. em Desenvolvimento de Sistemas</Text>
+        </View>
 
-      <Text style={styles.inst}>MENU DE OPÇÕES</Text>
-      <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/frequencia')}>
-          <Text style={styles.buttonText}>Frequência</Text>
-        </TouchableOpacity>
+        <Text style={styles.inst}>MENU DE OPÇÕES</Text>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity style={styles.button} onPress={() => router.push('/frequencia')}>
+            <Text style={styles.buttonText}>Frequência</Text>
+          </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/declaracoes')}>
-          <Text style={styles.buttonText}>Declarações</Text>
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => router.push('/declaracoes')}>
+            <Text style={styles.buttonText}>Declarações</Text>
+          </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/boletim')}>
-          <Text style={styles.buttonText}>Boletim</Text>
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => router.push('/boletim')}>
+            <Text style={styles.buttonText}>Boletim</Text>
+          </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/mensagens')}>
-          <Text style={styles.buttonText}>Mensagens</Text>
-        </TouchableOpacity>
-      </View>
+          <TouchableOpacity style={styles.button} onPress={() => router.push('/mensagens')}>
+            <Text style={styles.buttonText}>Mensagens</Text>
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
 
       <View style={styles.footer}>
         <Text style={styles.rodape}>Sistema NSA - RySo 2025</Text>
@@ -50,10 +52,12 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
     backgroundColor: '#f5f5f5',
+  },
+  scrollContainer: {
+    width: '100%',
     paddingBottom: 70,
+    alignItems: 'center',
   },
   logo: {
     backgroundColor: '#16425B',
@@ -74,15 +78,15 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#D9DCD6',
     borderRadius: 10,
-    width: '70%',
+    width: '85%',
   },
   info: {
     color: '#000000',
-    fontSize: 18,
+    fontSize: 16,
   },
   inst: {
     color: '#000000',
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: 'bold',
   },
   buttonContainer: {
