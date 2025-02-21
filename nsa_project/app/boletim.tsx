@@ -11,44 +11,44 @@ export default function HomeScreen() {
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.box}>
           <Text style={styles.materia}>PROGRAMAÇÃO WEB III</Text>
-          <Text style={styles.info}>CH:   Aulas:    Faltas:   Limite:   </Text>
-          <Text style={styles.info}>Freq. Atual:    Freq. Total:    </Text>
+          <Text style={styles.info}>CH:80   Aulas:10    Faltas:0   Limite:20   </Text>
+          <Text style={styles.info}>Freq. Atual:100%    Freq. Total:100%    </Text>
         </View>
 
         <View style={styles.box}>
           <Text style={styles.materia}>PROGRAMAÇÃO DE APLICATIVOS MOBILE II</Text>
-          <Text style={styles.info}>CH:   Aulas:    Faltas:   Limite:   </Text>
-          <Text style={styles.info}>Freq. Atual:    Freq. Total:    </Text>
+          <Text style={styles.info}>CH:80   Aulas:10    Faltas:0   Limite:20   </Text>
+          <Text style={styles.info}>Freq. Atual:100%    Freq. Total:100%    </Text>
         </View>
 
         <View style={styles.box}>
           <Text style={styles.materia}>INTERNET, PROTOCOLOS E SEGURANÇA DE SISTEMAS DA INFORMAÇÃO</Text>
-          <Text style={styles.info}>CH:   Aulas:    Faltas:   Limite:   </Text>
-          <Text style={styles.info}>Freq. Atual:    Freq. Total:    </Text>
+          <Text style={styles.info}>CH:80   Aulas:10    Faltas:0   Limite:20   </Text>
+          <Text style={styles.info}>Freq. Atual:100%    Freq. Total:100%    </Text>
         </View>
 
         <View style={styles.box}>
           <Text style={styles.materia}>PLANEJAMENTO E DESENVOLVIMENTO DO TRABALHO DE CONCLUSÃO DE CURSO (TCC) EM DESENVOLVIMENTO DE SISTEMAS</Text>
-          <Text style={styles.info}>CH:   Aulas:    Faltas:   Limite:   </Text>
-          <Text style={styles.info}>Freq. Atual:    Freq. Total:    </Text>
+          <Text style={styles.info}>CH:120   Aulas:15    Faltas:0   Limite:30   </Text>
+          <Text style={styles.info}>Freq. Atual:100%    Freq. Total:100%    </Text>
         </View>
 
         <View style={styles.box}>
           <Text style={styles.materia}>QUALIDADE E TESTE DE SOFTWARE</Text>
-          <Text style={styles.info}>CH:   Aulas:    Faltas:   Limite:   </Text>
-          <Text style={styles.info}>Freq. Atual:    Freq. Total:    </Text>
+          <Text style={styles.info}>CH:80   Aulas:10    Faltas:0   Limite:20   </Text>
+          <Text style={styles.info}>Freq. Atual:100%    Freq. Total:100%    </Text>
         </View>
 
         <View style={styles.box}>
           <Text style={styles.materia}>SISTEMAS EMBARCADOS</Text>
-          <Text style={styles.info}>CH:   Aulas:    Faltas:   Limite:   </Text>
-          <Text style={styles.info}>Freq. Atual:    Freq. Total:    </Text>
+          <Text style={styles.info}>CH:80   Aulas:10    Faltas:0   Limite:20   </Text>
+          <Text style={styles.info}>Freq. Atual100%:    Freq. Total:100%    </Text>
         </View>
 
         <View style={styles.boxTotal}>
           <Text style={styles.materia}>TOTAL:</Text>
-          <Text style={styles.info}>Aulas:    Faltas:   Limite:   </Text>
-          <Text style={styles.info}>Freq. Atual:    Freq. Total:    </Text>
+          <Text style={styles.info}>Aulas:520    Faltas:0   Limite:130   </Text>
+          <Text style={styles.info}>Freq. Atual:100%    Freq. Total:100%    </Text>
         </View>
       </ScrollView>
 
